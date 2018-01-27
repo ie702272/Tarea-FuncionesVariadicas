@@ -1,0 +1,15 @@
+Sergio Chung
+ie702272
+
+
+va_list -> es definido para pasar los parametros de la funcion suma.
+
+void va_start(va_list parametro, argN); -> se utiliza esta macro para inicializar los parametros antes de usar va_arg
+
+type va_arg(va_list parametro, int); -> regresa el siguiente argumento de la lista de parametros.
+
+void va_end(va_list parametro); -> se utiliza para limpiar y bloquea el uso de la lista de parametros
+
+Fue necesario utilizar la librería stdarg.h pues todas las macros ya estan desarrolladas para hacer que la funcion variadica
+en nuestro caso de una suma funciones en la menor canitdad de lineas posibles. Sin utilizar esta libreria era necesario
+utilizar apuntadores y una funcion que contenga arreglos para ir leyendo cada uno de los parametros que se desea sumar.
